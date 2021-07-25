@@ -7,8 +7,221 @@
     <title>Panda Mart</title>
     <!-- Bootstrap Stylesheet -->
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="asset/images/logo.png" alt="">  
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#shoes">Shoes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#backpack">Backpack</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Image Slider -->
+          <section class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row d-flex align-items-center mft-bg-info bg-gradient p-5">
+                        <div class="col-lg-7">
+                            <h1>Mi LED TV 4A PRO 32</h1>
+                            <p>The 1080p full HD screen features the powerful 7th generation picture quality engine that delivers a quality entertainment experience</p>
+                            <h1>$420</h1>
+                            <button class="btn mft-bg-warning">Buy Now</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="asset/images/banner-images/tv.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>  
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row d-flex align-items-center mft-bg-info bg-gradient p-5">
+                        <div class="col-lg-7">
+                            <h1>Bose Noise Cancelling Headphones 700</h1>
+                            <p>Bose Headphones 700 feature our renowned noise cancelling, astonishing sound, and unrivaled voice pickup. They’re smart headphones you’ll come to love whenever you want to listen to music.</p>
+                            <h1>$600</h1>
+                            <button class="btn mft-bg-warning">Buy Now</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="asset/images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>  
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row d-flex align-items-center mft-bg-info bg-gradient p-5">
+                        <div class="col-lg-7">
+                            <h1>Xbox Series X</h1>
+                            <p>The most powerful console ever fratures our custom-designed processor with new speed and performance capabilities and 12 teraflops power. Which provided the best 4k experience</p>
+                            <h1>$299</h1>
+                            <button class="btn mft-bg-warning">Buy Now</button>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="asset/images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>  
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>
+    </header>
+    <!-- Header End -->
+    <!-- Main Star -->
+    <main>
+      <!-- Catagories -->
+        <section class="container my-5">
+            <div class="row gy-10">
+                <div class="catagories col-lg-4 col-md-6">
+                    <div class="p-3 border bg-warning d-flex align-items-center justify-content-between rounded-3">
+                        <h1 class="text-white">Watch</h1>
+                        <img src="asset/images/categories/watch.png" alt="">
+                    </div>
+                </div>
+                <div class="catagories col-lg-4 col-md-6">
+                    <div class="p-3 border bg-primary d-flex align-items-center justify-content-between rounded-3">
+                        <h1 class="text-white">Bag</h1>
+                        <img src="asset/images/categories/bag.png" alt="">
+                    </div>
+                </div>
+                <div class="catagories col-lg-4 col-md-6">
+                    <div class="p-3 border bg-success d-flex align-items-center justify-content-between rounded-3">
+                        <h1 class="text-white">Shoe</h1>
+                        <img src="asset/images/categories/shoes.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+      <!-- Shoes -->
+      <section class="container" id="shoes">
+        <h2>Shoes</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card border-0 shadow-lg h-100">
+              <img src="asset/images/shoes/shoe-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SPLY-350</h5>
+                <p class="card-text">Yeezy Boost Sply 350 boost's energy-returning properties keep every step charged with an endless supply of light, fast energy. Designed with your foot when expanding natural give you a more comfortable and healthy operation.</p>
+              </div>
+              <div class="m-3">
+                <button class="btn mft-bg-warning">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-lg h-100">
+              <img src="asset/images/shoes/shoe-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nike-360</h5>
+                <p class="card-text">Featuring a full-length foam midsole and VaporMax Air unit, the Nike Air VaporMax 360 gives you remarkable underfoot comfort with bold 2000s style inspired by the Air Max 360.</p>
+              </div>
+              <div class="m-3">
+                <button class="btn mft-bg-warning">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-lg h-100">
+              <img src="asset/images/shoes/shoe-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Red Airmax</h5>
+                <p class="card-text">You'd be hard-pressed to find a shoe more eye-catching than the Nike Air Max '97. Indeed, these stunning, wavy, bold sneakers are far more than just another pair of Nikes. With incredible design and ultimate comfort, the Nike Air Max '97 is a shoe lovers dream.</p>
+              </div>
+              <div class="m-3">
+                <button class="btn mft-bg-warning">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Backpack -->
+      <section class="container my-5" id="backpack">
+        <h2>Backpack</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card border-0 shadow-lg h-100">
+              <img src="asset/images/bags/bag-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">OGIO</h5>
+                <p class="card-text">More essential than your morning coffee. This bag lets you work from anywhere by confidently carrying and protecting your work essentials and with unwavering durability.</p>
+              </div>
+              <div class="m-3">
+                <button class="btn mft-bg-warning">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-lg h-100">
+              <img src="asset/images/bags/bag-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Burton</h5>
+                <p class="card-text">Keep it simple with one daypack to do it all. Clean lines and plenty of features make the Burton Hitch 20L Backpack a quiver-of-one. Details like laptop sleeve and tablet storage.</p>
+              </div>
+              <div class="m-3">
+                <button class="btn mft-bg-warning">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 shadow-lg h-100">
+              <img src="asset/images/bags/bag-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kathmandu</h5>
+                <p class="card-text">Want a carry-on you can also check-in and use as a daypack? The innovative Federate Adapt Pack is here. It’s your versatile ‘three pack sizes in one’ adventure travel essential.</p>
+              </div>
+              <div class="m-3">
+                <button class="btn mft-bg-warning">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Subscribe -->
+      <section style="height: 300px;" class="container mft-bg-info d-flex justify-content-center align-items-center rounded-3" id="subscribe">
+        <div>
+          <h1>Let's Stay In Touch</h1>
+          <p>Get updates on sales, specials and more</p>
+          <input class="form-control" type="text" placeholder="Your Email">
+          <br>
+          <button class="btn mft-bg-warning">Submit</button>
+        </div>
+        
+      </section>
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer class="mt-5 text-center">
+        <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
+    <!-- Footer End -->
     <!-- Bootstrap Script -->
     <script src="asset/js/bootstrap.bundle.min.js"></script>
     <script src="asset/js/bootstrap.min.js"></script>
